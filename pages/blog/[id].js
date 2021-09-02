@@ -12,7 +12,7 @@ export default function BlogId({ blog }) {
                 }}
             />
             <div>
-                カテゴリー:{blog.category && `${blog.category.name}`}
+                カテゴリー:{blog.category && `${blog.category[0].name}`}
             </div>
         </main>
     );
