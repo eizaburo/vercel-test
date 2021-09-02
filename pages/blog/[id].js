@@ -10,6 +10,9 @@ export default function BlogId({ blog }) {
                     __html: `${blog.body}`,
                 }}
             />
+            <div>
+                カテゴリー:{blog.category && `${blog.category.name}`}
+            </div>
         </main>
     );
 }
