@@ -1,6 +1,7 @@
 import { client } from "../../libs/client";
 
 export default function BlogId({ blog }) {
+    console.log(JSON.stringify(blog));
     return (
         <main>
             <h1>{blog.title}</h1>
